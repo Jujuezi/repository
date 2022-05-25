@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pig/start.png</file>
+    </qresource>
+</RCC>
