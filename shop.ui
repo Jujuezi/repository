@@ -6,131 +6,329 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>963</width>
+    <height>393</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>商店</string>
   </property>
-  <widget class="QLabel" name="lblWhitPig">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>60</y>
-     <width>41</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lblBlackPig">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>70</y>
-     <width>41</width>
-     <height>9</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lblHuaZhu">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>70</y>
-     <width>41</width>
-     <height>9</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnExit">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>260</y>
-     <width>80</width>
-     <height>15</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>返回</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>200</y>
-     <width>341</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QPushButton" name="btnWhiteBuy">
-      <property name="text">
-       <string>购买白猪</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnBlackBuy">
-      <property name="text">
-       <string>购买黑猪</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnHuaBuy">
-      <property name="text">
-       <string>购买花猪</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>130</y>
-     <width>361</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
-    <item>
-     <widget class="QLabel" name="labelWhiteIntroduction">
-      <property name="text">
-       <string>白猪:￥100/只</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="labelBlackIntroduction">
-      <property name="text">
-       <string>黑猪:￥100/只</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="labelHuaZhuIntroduction">
-      <property name="text">
-       <string>花猪:￥100/只</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">#shop{border-image: url(:/pig/pigfarm.jpg);}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="lblWhitPig">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblBlackPig">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblHuaZhu">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="labelWhiteIntroduction">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:red;
+font: 11pt &quot;方正舒体&quot;;
+font-size:23px
+}</string>
+             </property>
+             <property name="text">
+              <string>白猪:￥100/只</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelBlackIntroduction">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:red;
+font: 11pt &quot;方正舒体&quot;;
+font-size:23px
+}</string>
+             </property>
+             <property name="text">
+              <string>黑猪:￥100/只</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelHuaZhuIntroduction">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:red;
+font: 11pt &quot;方正舒体&quot;;
+font-size:23px
+}</string>
+             </property>
+             <property name="text">
+              <string>花猪:￥100/只</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="btnWhiteBuy">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+             </property>
+             <property name="text">
+              <string>购买白猪</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnBlackBuy">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+             </property>
+             <property name="text">
+              <string>购买黑猪</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnHuaBuy">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+             </property>
+             <property name="text">
+              <string>购买花猪</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="lblCorn">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:red;
+font: 11pt &quot;方正舒体&quot;;
+font-size:23px
+}</string>
+             </property>
+             <property name="text">
+              <string>玉米粉:￥50/公斤</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblWheat">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:red;
+font: 11pt &quot;方正舒体&quot;;
+font-size:23px
+}</string>
+             </property>
+             <property name="text">
+              <string>小麦粉:￥30/公斤</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblCabbage">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:red;
+font: 11pt &quot;方正舒体&quot;;
+font-size:23px
+}</string>
+             </property>
+             <property name="text">
+              <string>卷心菜:￥20/公斤</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="btnCorn">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+             </property>
+             <property name="text">
+              <string>购买玉米粉</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnWheat">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+             </property>
+             <property name="text">
+              <string>购买小麦粉</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnCabbage">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+             </property>
+             <property name="text">
+              <string>购买卷心菜</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnExit">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

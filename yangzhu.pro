@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -34,7 +34,11 @@ SOURCES += \
     farmtext.cpp \
     pushtype.cpp \
     sell.cpp \
-    pig.cpp
+    pig.cpp \
+    feed.cpp \
+    food.cpp \
+    person.cpp \
+    dialog.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -46,7 +50,11 @@ HEADERS += \
     farmtext.h \
     pushtype.h \
     sell.h \
-    pig.h
+    pig.h \
+    feed.h \
+    food.h \
+    person.h \
+    dialog.h
 
 FORMS += \
         mainwindow.ui \
@@ -58,7 +66,15 @@ FORMS += \
     pigfarm.ui \
     farmtext.ui \
     pushtype.ui \
-    sell.ui
+    sell.ui \
+    feed.ui \
+    dialog.ui
+
+
+
+DISTFILES +=
 
 RESOURCES += \
     pig.qrc
+
+

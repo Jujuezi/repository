@@ -4,7 +4,7 @@
 #include <QDialog>
 #include"game.h"
 #include"buypig.h"
-
+#include"food.h"
 namespace Ui {
 class shop;
 }
@@ -21,8 +21,11 @@ public:
     static int blackPrice;
     static int HuaPrice;
     static int n;//标记购买的是哪种猪 1白猪 2黑猪 3花猪
+    static int f;//食物标记
+    
 signals:
     void buyPigSuccess();
+    void buyFood(int f);
 private slots:
     void on_btnExit_clicked();
 
@@ -35,9 +38,16 @@ private slots:
     void UpdateText();
     void sendBuySuccess();
 
+    void on_btnCorn_clicked();
+    
+    void on_btnWheat_clicked();
+    
+    void on_btnCabbage_clicked();
+    
 private:
     Ui::shop *ui;
     QString temp;
+
 };
 
 #endif // SHOP_H

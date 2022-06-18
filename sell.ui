@@ -13,67 +13,47 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#sell{border-image: url(:/pig/pigPos.jpg);}
+</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+color:white;
+font: 11pt &quot;方正舒体&quot;;
+font-size:30px
+}</string>
+     </property>
      <property name="text">
       <string>可以出售的大猪</string>
      </property>
     </widget>
    </item>
    <item row="0" column="1">
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QComboBox" name="comboBox"/>
-       </item>
-       <item>
-        <widget class="QComboBox" name="comboBox_2"/>
-       </item>
-       <item>
-        <widget class="QComboBox" name="comboBox_3"/>
-       </item>
-       <item>
-        <widget class="QComboBox" name="comboBox_4"/>
-       </item>
-       <item>
-        <widget class="QComboBox" name="comboBox_5"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>TextLabel</string>
+        <widget class="QComboBox" name="comboBox">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;站酷小薇LOGO体&quot;;</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>TextLabel</string>
+        <widget class="QLabel" name="lblPrice">
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+color:white;
+font: 11pt &quot;方正舒体&quot;;
+font-size:20px
+}</string>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_6">
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -85,6 +65,18 @@
    </item>
    <item row="1" column="0">
     <widget class="QPushButton" name="btnSell">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
      <property name="text">
       <string>出售</string>
      </property>
@@ -92,6 +84,18 @@
    </item>
    <item row="1" column="1">
     <widget class="QPushButton" name="btnCancel">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
      <property name="text">
       <string>取消</string>
      </property>

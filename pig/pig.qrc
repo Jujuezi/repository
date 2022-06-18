@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>blackPig.png</file>
+        <file>cabbage.png</file>
+        <file>corn.png</file>
+        <file>huaPig.png</file>
+        <file>man.png</file>
+        <file>pigfarm.jpg</file>
+        <file>sellPig.png</file>
+        <file>start.png</file>
+        <file>wheat.png</file>
+        <file>whitePig.png</file>
+    </qresource>
+</RCC>

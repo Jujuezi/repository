@@ -17,16 +17,16 @@
    <string notr="true">#MainWindow{border-image: url(:/pig/start.png);}</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>220</y>
-      <width>153</width>
-      <height>351</height>
+      <x>270</x>
+      <y>309</y>
+      <width>469</width>
+      <height>83</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
       <widget class="QPushButton" name="btnNewGame">
        <property name="minimumSize">
@@ -42,10 +42,14 @@ color:blue;
 font: 11pt &quot;方正舒体&quot;;
 font-size:25px
 }
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}
 </string>
        </property>
        <property name="text">
-        <string>新游戏</string>
+        <string>登陆游戏</string>
        </property>
       </widget>
      </item>
@@ -64,10 +68,14 @@ font-size:25px
 color:blue;
 	font: 11pt &quot;方正舒体&quot;;
 font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
 }</string>
        </property>
        <property name="text">
-        <string>继续游戏</string>
+        <string>注册账号</string>
        </property>
       </widget>
      </item>
@@ -80,7 +88,11 @@ font-size:25px
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton
+        <string notr="true">QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}
+QPushButton
 {
 color:blue;
 	font: 11pt &quot;方正舒体&quot;;
@@ -91,6 +103,73 @@ font-size:25px
         <string>退出游戏</string>
        </property>
       </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>271</width>
+      <height>63</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+color:white;
+font: 11pt &quot;方正舒体&quot;;
+font-size:20px
+}</string>
+         </property>
+         <property name="text">
+          <string>用户名：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditName">
+         <property name="echoMode">
+          <enum>QLineEdit::Normal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+color:white;
+font: 11pt &quot;方正舒体&quot;;
+font-size:20px
+}</string>
+         </property>
+         <property name="text">
+          <string>密    码：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPswd">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::PasswordEchoOnEdit</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>

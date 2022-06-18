@@ -2,45 +2,107 @@
 <ui version="4.0">
  <class>farmText</class>
  <widget class="QDialog" name="farmText">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>384</width>
+    <height>253</height>
+   </rect>
+  </property>
   <property name="windowTitle">
    <string>猪栏信息</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#farmText{border-image: url(:/pig/pigfarm.jpg);}</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_2">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QTextEdit" name="textEdit"/>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QPushButton" name="btnPush">
-           <property name="text">
-            <string>放猪进栏</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="btnSell">
-           <property name="text">
-            <string>卖猪</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
+      <widget class="QPushButton" name="btnPush">
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>放猪进栏</string>
+       </property>
+      </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnClose">
+      <widget class="QPushButton" name="btnFeed">
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+       </property>
        <property name="text">
-        <string>退出</string>
+        <string>喂猪</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSell">
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>卖猪</string>
        </property>
       </widget>
      </item>
     </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="btnClose">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

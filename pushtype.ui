@@ -13,43 +13,118 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#pushType{border-image: url(:/pig/pigPos.jpg);}
+</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
+   <item row="0" column="0" rowspan="2">
     <widget class="QLabel" name="lblType">
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+color:white;
+font: 11pt &quot;方正舒体&quot;;
+font-size:40px
+}</string>
+     </property>
      <property name="text">
       <string>选择要放入的小猪
-每个猪栏最多放5只小猪</string>
+每个猪栏最多放2只小猪</string>
      </property>
     </widget>
    </item>
    <item row="0" column="1">
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QComboBox" name="comboBox"/>
+      <widget class="QLabel" name="lblpig1">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+color:white;
+font: 11pt &quot;方正舒体&quot;;
+font-size:20px
+}</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="comboBox_2"/>
-     </item>
-     <item>
-      <widget class="QComboBox" name="comboBox_3"/>
-     </item>
-     <item>
-      <widget class="QComboBox" name="comboBox_4"/>
-     </item>
-     <item>
-      <widget class="QComboBox" name="comboBox_5"/>
+      <widget class="QComboBox" name="comboBox">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;站酷小薇LOGO体&quot;;</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
-   <item row="1" column="0">
-    <widget class="QPushButton" name="pushButton">
+   <item row="1" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="lblpig2">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+color:white;
+font: 11pt &quot;方正舒体&quot;;
+font-size:20px
+}</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;站酷小薇LOGO体&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="btnPush">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
      <property name="text">
       <string>放入猪栏</string>
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
+   <item row="2" column="1">
     <widget class="QPushButton" name="btnCancel">
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
      <property name="text">
       <string>取消</string>
      </property>

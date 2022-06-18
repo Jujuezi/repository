@@ -8,7 +8,10 @@
 #include <QTimer>
 #include <QMessageBox>
 #include<QDebug>
-
+#include"food.h"
+#include"person.h"
+#include<QMediaPlayer>
+#include <QMediaPlaylist>
 namespace Ui {
 class game;
 }
@@ -26,8 +29,12 @@ public:
     static int huaPigNum;
     static int money;//钱
     static int pigFarmPrice;//猪场价格
-
-
+    static bigpigfarmclass bpf;
+    static wheat wt;
+    static corn cn;
+    static cabbage cb;
+    static int numrec;//进入的猪场编号
+    static Person man;
 signals:
     void sendsignal();
     void canBuySignal();
@@ -46,26 +53,35 @@ private slots:
 
     void on_btnZhuchang6_clicked();
 
-    void on_btnZhuchang7_clicked();
-
-    void on_btnZhuchang8_clicked();
-
-    void on_btnZhuchang9_clicked();
-
     void UpdatePig();
     void buySuccessUpdate();
     
     void record1Change();
+    void record2Change();
+    void record3Change();
+    void record4Change();
+    void record5Change();
+    void record6Change();
+
     void on_btnShop_clicked();
 
     void on_timer_timeout();
+    void cleardata();
+    void pigGrowUp();
 private:
     Ui::game *ui; 
 
     bool record1=false;//记录购买状态
+    bool record2=false;
+    bool record3=false;
+    bool record4=false;
+    bool record5=false;
+    bool record6=false;
+
     QTimer *tt;//游戏时间
     int t=0;
     QString temp;//读取数据文本
+
 };
 
 #endif // GAME_H

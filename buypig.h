@@ -5,7 +5,7 @@
 #include"game.h"
 #include"shop.h"
 #include"pig.h"
-const int whiteN=100;
+
 namespace Ui {
 class buyPig;
 }
@@ -17,9 +17,11 @@ class buyPig : public QDialog
 public:
     explicit buyPig(QWidget *parent = 0);
     ~buyPig();
-    static whitePig wArr[whiteN];
-    static int i;
-
+    static vector<whitePig> vw;//存放猪的数组
+    static vector<blackPig> vb;
+    static vector<huaPig> vh;
+    static bool pigFlag;
+    static bool foodFlag;
 
 signals:
     void buyPigSuccess();

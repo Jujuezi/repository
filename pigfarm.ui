@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#pigFarm{border-image: url(:/pig/pigPos.jpg);}</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QPushButton" name="btnPig1">
@@ -21,6 +24,18 @@
        <width>81</width>
        <height>51</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
      </property>
      <property name="text">
       <string>猪栏1</string>
@@ -35,6 +50,18 @@
        <height>51</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
      <property name="text">
       <string>猪栏2</string>
      </property>
@@ -47,6 +74,18 @@
        <width>81</width>
        <height>51</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
      </property>
      <property name="text">
       <string>猪栏3</string>
@@ -61,6 +100,18 @@
        <height>51</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
      <property name="text">
       <string>猪栏4</string>
      </property>
@@ -74,6 +125,18 @@
        <height>51</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
+     </property>
      <property name="text">
       <string>猪栏5</string>
      </property>
@@ -86,6 +149,21 @@
        <width>81</width>
        <height>51</height>
       </size>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+color:blue;
+font: 11pt &quot;方正舒体&quot;;
+font-size:25px
+}
+QPushButton:hover {
+    background-color: #008cba;
+    color: white;
+}</string>
      </property>
      <property name="text">
       <string>猪栏6</string>

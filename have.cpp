@@ -9,6 +9,8 @@ have::have(QWidget *parent) :
     ui->setupUi(this);
     QString price=QString::number(game::pigFarmPrice,10);
     ui->lblPrice->setText("这个猪场的价格："+price);
+    ui->btnBuy->setFlat(true);
+    ui->btnClose->setFlat(true);
 }
 
 have::~have()

@@ -1,5 +1,16 @@
 <RCC>
     <qresource prefix="/">
+        <file>pig/blackPig.png</file>
+        <file>pig/cabbage.png</file>
+        <file>pig/corn.png</file>
+        <file>pig/huaPig.png</file>
+        <file>pig/man.png</file>
+        <file>pig/pigfarm.jpg</file>
+        <file>pig/sellPig.png</file>
         <file>pig/start.png</file>
+        <file>pig/wheat.png</file>
+        <file>pig/whitePig.png</file>
+        <file>pig/pigPos.jpg</file>
+        <file>pig/summer.mp3</file>
     </qresource>
 </RCC>
