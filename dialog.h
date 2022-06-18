@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include"mainwindow.h"
+#include <QSqlTableModel>
 namespace Ui {
 class Dialog;
 }
